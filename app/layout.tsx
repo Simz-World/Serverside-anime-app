@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 
+// the hero and footer is typically the header and and bottom 
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 
@@ -23,7 +24,8 @@ export default function RootLayout({
       <body className={dmSans.className}>
         <main className="max-w-7xl mx-auto bg-[#0F1117]">
           <Hero />
-          {children}
+          {/* the children refers to the pain we are currently on */}
+          {children} 
           <Footer />
         </main>
       </body>
